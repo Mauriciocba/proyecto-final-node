@@ -110,7 +110,7 @@ server.post("/auth/login", async (request, response) => {
 })
 
 
-server.get("/sites", authMiddleware, async (request, response) => {
+server.get("/sites", async (request, response) => {
   try {
     const sites = await Site.find()
     response.json(sites)
@@ -187,7 +187,7 @@ server.delete("/delete-sites/:id", authMiddleware, async (request, response) => 
 
     response.json({ message: "Site eliminado exitosamente", site: deletedSite })
   } catch (error) {
-    response.status(500).json({ error: "Error al eliminar el site" })
+    response.status(500).json({ error: "Error al eliminar el sitio" })
   }
 })
 
