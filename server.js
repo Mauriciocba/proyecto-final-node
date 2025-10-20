@@ -119,7 +119,7 @@ server.get("/sites", async (request, response) => {
   }
 })
 
-server.get("/sites/:id", authMiddleware, async (request, response) => {
+server.get("/sites/:id", async (request, response) => {
   try {
     const id = request.params.id
     const site = await Site.findById(id)
