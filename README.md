@@ -79,3 +79,9 @@ proyecto-final/
 ├── server.js
 └── README.md
 ```
+
+## Link de coleccion Postman
+
+```
+https://solar-shadow-371180.postman.co/workspace/API~83b97e4b-95e9-46ef-a34c-f909726d31c5/collection/27289841-b7382b9a-a31a-41f7-8745-da0551b4d597?action=share&source=copy-link&creator=27289841
+```
